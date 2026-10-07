@@ -87,10 +87,14 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
       if (!saved) return PROFILE_DATA;
 
       const savedProfile = JSON.parse(saved) as ProfileInfo;
+      const legacyAvatarPaths = [
+        '/src/assets/images/nagarjuna_profile_1788453909001.jpg',
+        '/src/assets/images/linkedin.jpg',
+      ];
       return {
         ...savedProfile,
         avatarUrl:
-          savedProfile.avatarUrl === '/src/assets/images/nagarjuna_profile_1788453909001.jpg'
+          legacyAvatarPaths.includes(savedProfile.avatarUrl)
             ? PROFILE_DATA.avatarUrl
             : savedProfile.avatarUrl,
         metrics: savedProfile.metrics.map((metric) =>

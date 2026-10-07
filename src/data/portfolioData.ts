@@ -7,6 +7,7 @@ import {
   CertificationItem,
   AchievementItem,
 } from '../types';
+import linkedinAvatar from '../assets/images/linkedin.jpg';
 
 export const PROFILE_DATA: ProfileInfo = {
   name: 'Kandi Venkata Nagarjuna Reddy',
@@ -21,7 +22,7 @@ export const PROFILE_DATA: ProfileInfo = {
   fullBio: `Aspiring Software Engineer with strong foundations in Java, Object-Oriented Programming (OOP), MySQL, and Data Structures. Hands-on experience in developing web applications, REST APIs, and HTML, CSS, JavaScript, and Git. Familiar with software testing, debugging, database management, and version control. Passionate about solving real-world problems, learning new technologies, and developing scalable, reliable software applications.`,
   location: 'Bapatla, Andhra Pradesh, India',
   timezone: 'Asia/Kolkata (IST • UTC+5:30)',
-  avatarUrl: '/src/assets/images/linkedin.jpg',
+  avatarUrl: linkedinAvatar,
   status: {
     availableForHire: true,
     currentFocus: 'Java OOP, Data Structures & Scalable Web Applications',
